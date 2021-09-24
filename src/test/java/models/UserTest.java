@@ -11,4 +11,9 @@ public class UserTest {
         assertTrue(true);
     }
 
+    @Test
+    public void getName_instantiatesCorrectNameAttribute_string(){
+        User testUser = new User("Ray", "Chief-Editor", "Oversee publication process from writing to printing.", 1);
+        assertEquals("Ray", testUser.getName());
+    }
 }

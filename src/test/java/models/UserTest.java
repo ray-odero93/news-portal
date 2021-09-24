@@ -34,4 +34,11 @@ public class UserTest {
         User testUser = new User("Ray", "Chief-Editor", "Oversee publication process from writing to printing.", 1);
         assertEquals(1, testUser.getDepartmentId());
     }
+
+    @Test
+    public void getId_instantiatesCorrectIdAttributeOfClass_integer() {
+        User testUser = new User("Ray", "Chief-Editor", "Oversee publication process from writing to printing.", 1);
+        User anotherUser = new User("Purity", "Columnist", "Writing pieces for weekend columns.", 6);
+        assertEquals(1, anotherUser.getId());
+    }
 }

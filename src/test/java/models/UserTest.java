@@ -22,4 +22,10 @@ public class UserTest {
         User testUser = new User("Ray", "Chief-Editor", "Oversee publication process from writing to printing.", 1);
         assertEquals("Chief-Editor", testUser.getPosition());
     }
+
+    @Test
+    public void getRole_instantiatesCorrectRoleAttribute_string() {
+        User testUser = new User("Ray", "Chief-Editor", "Oversee publication process from writing to printing.", 1);
+        assertEquals("Oversee publication process from writing to printing.", testUser.getRole());
+    }
 }

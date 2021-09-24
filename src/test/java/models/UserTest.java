@@ -28,4 +28,10 @@ public class UserTest {
         User testUser = new User("Ray", "Chief-Editor", "Oversee publication process from writing to printing.", 1);
         assertEquals("Oversee publication process from writing to printing.", testUser.getRole());
     }
+
+    @Test
+    public void getDepartmentId_instantiatesCorrectDepartmentIdAttribute_integer() {
+        User testUser = new User("Ray", "Chief-Editor", "Oversee publication process from writing to printing.", 1);
+        assertEquals(1, testUser.getDepartmentId());
+    }
 }

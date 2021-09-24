@@ -12,10 +12,11 @@ public class User {
         this.position = position;
         this.role = role;
         this.departmentId = departmentId;
+        this.id = id;
     }
 
     public int getId() {
-        return 0;
+        return id;
     }
 
     public void setId(int id) {
@@ -23,7 +24,7 @@ public class User {
     }
 
     public String getPosition() {
-        return null;
+        return position;
     }
 
     public void setPosition(String position) {
@@ -31,7 +32,7 @@ public class User {
     }
 
     public String getName() {
-        return null;
+        return name;
     }
 
     public void setName(String name) {
@@ -39,7 +40,7 @@ public class User {
     }
 
     public String getRole() {
-        return null;
+        return role;
     }
 
     public void setRole(String role) {
@@ -47,7 +48,7 @@ public class User {
     }
 
     public int getDepartmentId() {
-        return 0;
+        return departmentId;
     }
 
     public void setDepartmentId(int departmentId) {

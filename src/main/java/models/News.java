@@ -9,7 +9,7 @@ public class News {
     private  String content;
     private Timestamp postDate;
 
-    public News(int id, int userId, String type, String content, Timestamp postDate) {
+    public News(int userId, String type, String content) {
         this.id = id;
         this.userId = userId;
         this.type = type;
@@ -18,7 +18,7 @@ public class News {
     }
 
     public int getId() {
-        return id;
+        return 0;
     }
 
     public void setId(int id) {
@@ -26,7 +26,7 @@ public class News {
     }
 
     public int getUserId() {
-        return userId;
+        return id;
     }
 
     public void setUserId(int userId) {

@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface DepartmentDao {
 //    create
-    void addDepartment(DepartmentDao department);
+    void addDepartment(Department department);
 
 //    read
     List<Department> getAllDepartments();

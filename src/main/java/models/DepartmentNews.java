@@ -1,4 +1,4 @@
 package models;
 
-public class DepartmentNews {
+public class DepartmentNews{
 }

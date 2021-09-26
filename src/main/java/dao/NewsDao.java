@@ -1,9 +1,9 @@
 package dao;
 
-import com.sun.tools.javac.util.List;
-import jdk.nashorn.internal.runtime.ListAdapter;
 import models.DepartmentNews;
 import models.News;
+
+import java.util.List;
 
 public interface NewsDao {
 //    create
@@ -12,8 +12,10 @@ public interface NewsDao {
 
 //    read
     List<News> getAllNews();
-    List<News> getGeneralNews();
-    List<DepartmentNews> getDepartmentNews();
+    List<News> getAllGeneralNews();
+    List<DepartmentNews> getAllDepartmentNews();
+    News findGeneralNewsById(int id);
+    DepartmentNews findDepartmentNewsById(int id);
 
 //    update
     void updateGeneralNews(News news, int userId, String content);

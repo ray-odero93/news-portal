@@ -6,8 +6,8 @@ import java.util.Objects;
 public class DepartmentNews extends News{
     private int departmentId;
 
-    public DepartmentNews(int id, int userId, String type, String content, Timestamp postDate, int departmentId) {
-        super(id, userId, type, content, postDate);
+    public DepartmentNews(int id, int userId, String type, String content, int departmentId) {
+        super(id, userId, type, content);
         this.departmentId = departmentId;
     }
 

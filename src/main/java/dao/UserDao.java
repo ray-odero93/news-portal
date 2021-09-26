@@ -10,7 +10,7 @@ public interface UserDao {
 
 //    read
     List<User> getAllUsers();
-    User findById(int id);
+    User findUserById(int id);
 
 //    update
     void updateUser(User user, String name, String position, String role, int departmentId);

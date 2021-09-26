@@ -10,7 +10,7 @@ public class News {
     private  String content;
     private Timestamp postDate;
 
-    public News(int userId, String type, String content) {
+    public News(int id, int userId, String type, String content, Timestamp postDate) {
         this.id = id;
         this.userId = userId;
         this.type = type;

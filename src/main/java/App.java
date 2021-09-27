@@ -77,25 +77,25 @@ public class App {
             return gson.toJson(departmentDao.findDepartmentById(dpt_id));
         });
         get("/departments/:id/users",(req, res)->{
-            int dpt_id = Integer.parseInt(req.params("id"));
-            return gson.toJson(departmentId.getDepartmentUsersById(dpt_id));
+            int departmentId = Integer.parseInt(req.params("id"));
+            return gson.toJson(departmentId.getDepartmentUsersById(departmentId));
         });
         get("/departments/:id/news",(req,res)->{
-            int dpt_id = Integer.parseInt(req.params("id"));
-            return gson.toJson(departmentId.getDepartmentNewsById(dpt_id));
+            int departmentId = Integer.parseInt(req.params("id"));
+            return gson.toJson(departmentId.getDepartmentNewsById(departmentId));
         });
         get("/news", (req,res)-> gson.toJson(newsDao.getAllNews()));
         get("/news/general", (req,res)-> gson.toJson(newsDao.getAllGeneralNews()));
         get("/news/department", (req,res)-> gson.toJson(newsDao.getAllDepartmentNews()));
 
         post("/Departments/new", "application/json", (req,res)->{
-            Department dpt = gson.fromJson(req.body(),Department.class);
+            Department department = gson.fromJson(req.body(),Department.class);
 
-            departmentId.addDepartment(dpt);
+            departmentDao.addDepartment(department);
             res.status(201);
             res.type("application/json");
             res.redirect("/departments");
-            return gson.toJson(dpt);
+            return gson.toJson(department);
         });
         post("/Users/new", "application/json", (req,res)->{
             User user = gson.fromJson(req.body(), User.class);

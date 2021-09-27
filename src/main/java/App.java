@@ -78,11 +78,11 @@ public class App {
         });
         get("/departments/:id/users",(req, res)->{
             int departmentId = Integer.parseInt(req.params("id"));
-            return gson.toJson(departmentId.getDepartmentUsersById(departmentId));
+            return gson.toJson(departmentDao.getDepartmentUsersById(departmentId));
         });
         get("/departments/:id/news",(req,res)->{
             int departmentId = Integer.parseInt(req.params("id"));
-            return gson.toJson(departmentId.getDepartmentNewsById(departmentId));
+            return gson.toJson(departmentDao.getDepartmentNewsById(departmentId));
         });
         get("/news", (req,res)-> gson.toJson(newsDao.getAllNews()));
         get("/news/general", (req,res)-> gson.toJson(newsDao.getAllGeneralNews()));

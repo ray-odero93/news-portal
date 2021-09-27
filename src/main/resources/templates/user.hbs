@@ -1,0 +1,24 @@
+{{#partial "content"}}
+<div><br>
+<h3>Users</h3>
+<ul>
+<li>
+<div>{{user.id}}</div>
+<div>{{user.name}}</div>
+<div>{{user.position}}</div>
+<div>{{user.role}}</div>
+<div>{{user.departmentId}}</div>
+</li>
+</ul>
+
+<div>
+<input class= "" type="text" name="user-name" id="user-name" placeholder="User name...">
+<input class="" type="text" name="user-position" id="user-position" placeholder="User position...">
+<input class="" type="text" name="user-role" id="user-role" placeholder="User role...">
+<select class=""></select>
+<button class="btn">Add User</button>
+</div>
+</div>
+{{/partial}}
+
+{{>layout.hbs}}
